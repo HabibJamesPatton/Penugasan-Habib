@@ -3,49 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Penugasan Habib</title>
+    <title>Portfolio Habib</title>
+    <link rel="stylesheet" href="./dist/output.css">
 </head>
 <body>
-    <nav>
-        <a href="#beranda">Beranda</a> |
-        <a href="#profil">Profil</a> |
-        <a href="#skill">Skill</a> |
-        <a href="">Penugasan</a> |
-        <a href="">Portfolio</a> |
-        <a href="">Kontak</a> |
+
+    <!--Bagian Header yang berisikan Navigasi Bar-->
+    <header>
+    <!-- Navigasi Bar -->
+    <nav id="navbar" class="fixed top-0 w-full flex justify-start gap-6 p-4 bg-blue-700 text-white transition-transform duration-300 z-50">
+        <a href="#beranda">Beranda</a> 
+        <a href="#profil">Profil</a> 
+        <a href="#skill">Skill</a> 
+        <a href="#penugasan">Penugasan</a> 
+        <a href="#portfolio">Portfolio</a> 
+        <a href="#kontak">Kontak</a> 
     </nav>
+    </header>
+
+    <!--Bagian main untuk konten utama/section utama-->
+    <main>
+    <!-- Action dari navigasi -->
+     <!-- Section Beranda -->
     <section id="beranda" class="home" >
         <div class="container">
-            <h1>Biodata Pribadi</h1>
-            <h3>Hola!, Namaku Habib</h3>
-            <h3>Untuk info selebihnya bisa kalian sroll kebawah atau cek melalui navigasi bar ya guys!</h3>
+            <h1>Portofolio Pribadi</h1>
+            <h3>Halo! Perkenalkan namaku Habib</h3>
+            <h3>Untuk info selebihnya bisa kalian scroll kebawah atau cek melalui navigasi bar ya guys!</h3>
         </div>
     </section>
+
+    <!-- Section profil -->
     <section id="profil" class="about">
-        <h1>Salam Kenal!</h1>
+        <h2>Salam Kenal!</h2>
         <div class="container">
-                <table cellpadding="10">
-                    <tr>
-                        <td>Nama Lengkap</td>
-                        <td>:</td>
-                        <td>Habib Burrohman</td>
-                    </tr>
-                    <tr>
-                        <td>Tanggal Lahir</td>
-                        <td>:</td>
-                        <td>21 Februari 2007</td>
-                    </tr>
-                    <tr>
-                        <td>Program Studi</td>
-                        <td>:</td>
-                        <td>D3-Teknik Informatika</td>
-                    </tr>
-                </table>
-            <p>Saya juga memiliki beberapa keterampilan yang bisa kalian cek dibawah ini ya!</p>
+            <h4>Nama saya Habib Burrohman</h4>
+            <h4>Mahasiswa program studi D3-Teknik Informatika, Politeknik Negeri Bandung</h4>
+            <h4>Dengan nim 251511039</h4>
+            <p>Saya pribadi adalah seorang yang memiliki minat dalam bidang teknologi terutama Software,
+             meskipun saya baru mendalami bidang ini, saya yakin dengan kemampuan saya untuk bisa bersaing
+             dengan  software, Saya juga memiliki beberapa keterampilan yang bisa kalian cek dibawah ini ya!</p>
         </div>
     </section>
+
+    <!-- Section keterampilan -->
     <section id="skill" class="mastery">
-        <h1>Skill dan Minat</h1>
+        <h2>Skill dan Minat</h2>
         <div class="skill-container">
             <div id="poster-design" class="skill-card">
                 <h2>Poster Design</h2>
@@ -55,8 +58,71 @@
                 <h2>Problem Solving</h2>
                 <p>Disaat saya terlibat sebuah projek kelompok, saya bisa cukup diandalkan dalam menuntaskan permasalahan</p>
             </div>
+            <div id="adaptability" class="skill-card">
+                <h2>Adaptibility</h2>
+                <p>Saya bisa untuk beradptasi dengan lingkungan belajar yang kompetitif sehingga mampu meningkatkan kemampuan saya</p>
+            </div>
+            <div id="team-work" class="skill-card">
+                <h2>Team Working</h2>
+                <p>Seringkali terjadi misskomunikasi dalam sebuah kelompok, saya bisa membantu rekan kelompok saya untuk menjembatani hal tersbeut</p>
+            </div>
+            <div id="interest-in-learning" class="skill-card">
+                <h2>Interest In Learning</h2>
+                <p>Pengalaman yang baru membuat saya menjadi tertarik akan hal yang baru, saya selalu antusias menyambut hal baru</p>
+            </div>
         </div>
     </section>
+
+    <!-- Section Penugasan (Unfinished)-->
+    <section id="penugasan" class="assesment">
+        <h2>Penugasan</h2>
+        <div>
+            <h3>Penugasan 2 - Dokumen</h3>
+            <figure>
+                <figcaption>Berikut adalah dokumen untuk penugasan ke-2 yaitu <em>Term of Reference</em></figcaption>
+                <object data="" type="application/pdf">
+                    <p>Browser tidak mendukung file PDF. <a href="">Download file disini.</a></p>
+                </object>
+            </figure>
+        </div>
+        <div>
+            <h3>Penugasan 3 - Infografis</h3>
+            <figure>
+                <figcaption>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </figcaption>
+                <img src="-" alt="Infografis mengenai pendidikan di Indonesia saat ini">
+            </figure>
+        </div>
+        <div>
+            <h3>Penugasan 4 - Video</h3>
+            <figure>
+                <figcaption></figcaption>
+                <video src="" controls preload="none"></video>
+            </figure>
+        </div>
+    </section>
+
+    <!--Section Portofolio (Unfinished)-->
+    <section id="portfolio" class="project">
+        <h2>Portofolio & Proyek</h2>
+        <div id="proyek-1" class="proyek">
+
+        </div>
+    </section>
+
+    <!--Section Kontak (Unfinished)-->
+    <section id="kontak">
+        <h2>Kontak</h2>
+    </section>
+    </main>
     
+    <!--Bagian Footer untuk Copyright-->
+    <footer>
+        <h5>&copy; 2026 Portfolio Habib Burrohman. All rights reserved.</h5>
+        <p>Terima kasih.</p>
+    </footer>
+
 </body>
 </html>
