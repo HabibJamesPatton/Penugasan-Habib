@@ -1,128 +1,429 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Habib</title>
     <link rel="stylesheet" href="./dist/output.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
     <!--Bagian Header yang berisikan Navigasi Bar-->
     <header>
-    <!-- Navigasi Bar -->
-    <nav id="navbar" class="fixed top-0 w-full flex justify-start gap-6 p-4 bg-blue-700 text-white transition-transform duration-300 z-50">
-        <a href="#beranda">Beranda</a> 
-        <a href="#profil">Profil</a> 
-        <a href="#skill">Skill</a> 
-        <a href="#penugasan">Penugasan</a> 
-        <a href="#portfolio">Portfolio</a> 
-        <a href="#kontak">Kontak</a> 
-    </nav>
+        <!-- Navigasi Bar -->
+        <nav id="navbar"
+            class="fixed top-0 w-full flex justify-start gap-6 p-4 bg-brand-bg text-brand-text transition-transform duration-300 z-50 shadow-md border-b border-brand-primary/20">
+            <a href="#beranda" class="text-sm font-small hover:text-brand-primary transition-colors">Beranda</a>
+            <a href="#profil" class="text-sm font-small hover:text-brand-primary transition-colors">Profil</a>
+            <a href="#skill" class="text-sm font-small hover:text-brand-primary transition-colors">Skill</a>
+            <a href="#penugasan" class="text-sm font-small hover:text-brand-primary transition-colors">Penugasan</a>
+            <a href="#portofolio" class="text-sm font-small hover:text-brand-primary transition-colors">Portofolio</a>
+            <a href="#kontak" class="text-sm font-smallhover:text-brand-primary transition-colors">Kontak</a>
+        </nav>
     </header>
 
     <!--Bagian main untuk konten utama/section utama-->
     <main>
-    <!-- Action dari navigasi -->
-     <!-- Section Beranda -->
-    <section id="beranda" class="home" >
-        <div class="container">
-            <h1>Portofolio Pribadi</h1>
-            <h3>Halo! Perkenalkan namaku Habib</h3>
-            <h3>Untuk info selebihnya bisa kalian scroll kebawah atau cek melalui navigasi bar ya guys!</h3>
-        </div>
-    </section>
+        <!-- Action dari navigasi -->
+        <!-- Section Beranda -->
+        <section id="beranda" class="min-h-screen flex items-center bg-brand-bg px-8 pt-20 relative overflow-hidden">
 
-    <!-- Section profil -->
-    <section id="profil" class="about">
-        <h2>Salam Kenal!</h2>
-        <div class="container">
-            <h4>Nama saya Habib Burrohman</h4>
-            <h4>Mahasiswa program studi D3-Teknik Informatika, Politeknik Negeri Bandung</h4>
-            <h4>Dengan nim 251511039</h4>
-            <p>Saya pribadi adalah seorang yang memiliki minat dalam bidang teknologi terutama Software,
-             meskipun saya baru mendalami bidang ini, saya yakin dengan kemampuan saya untuk bisa bersaing
-             dengan  software, Saya juga memiliki beberapa keterampilan yang bisa kalian cek dibawah ini ya!</p>
-        </div>
-    </section>
-
-    <!-- Section keterampilan -->
-    <section id="skill" class="mastery">
-        <h2>Skill dan Minat</h2>
-        <div class="skill-container">
-            <div id="poster-design" class="skill-card">
-                <h2>Poster Design</h2>
-                <p>Saya sempat beberapa kali mendesign poster untuk melatih kreativitas</p>
+            <div
+                class="absolute top-[-20%] left-[-10%] w-[700px] h-[700px] bg-brand-primary/15 rounded-full blur-[130px] animate-mesh pointer-events-none">
             </div>
-            <div id="problem-solving" class="skill-card">
-                <h2>Problem Solving</h2>
-                <p>Disaat saya terlibat sebuah projek kelompok, saya bisa cukup diandalkan dalam menuntaskan permasalahan</p>
-            </div>
-            <div id="adaptability" class="skill-card">
-                <h2>Adaptibility</h2>
-                <p>Saya bisa untuk beradptasi dengan lingkungan belajar yang kompetitif sehingga mampu meningkatkan kemampuan saya</p>
-            </div>
-            <div id="team-work" class="skill-card">
-                <h2>Team Working</h2>
-                <p>Seringkali terjadi misskomunikasi dalam sebuah kelompok, saya bisa membantu rekan kelompok saya untuk menjembatani hal tersbeut</p>
-            </div>
-            <div id="interest-in-learning" class="skill-card">
-                <h2>Interest In Learning</h2>
-                <p>Pengalaman yang baru membuat saya menjadi tertarik akan hal yang baru, saya selalu antusias menyambut hal baru</p>
-            </div>
-        </div>
-    </section>
 
-    <!-- Section Penugasan (Unfinished)-->
-    <section id="penugasan" class="assesment">
-        <h2>Penugasan</h2>
-        <div>
-            <h3>Penugasan 2 - Dokumen</h3>
-            <figure>
-                <figcaption>Berikut adalah dokumen untuk penugasan ke-2 yaitu <em>Term of Reference</em></figcaption>
-                <object data="" type="application/pdf">
-                    <p>Browser tidak mendukung file PDF. <a href="">Download file disini.</a></p>
-                </object>
-            </figure>
-        </div>
-        <div>
-            <h3>Penugasan 3 - Infografis</h3>
-            <figure>
-                <figcaption>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                </figcaption>
-                <img src="-" alt="Infografis mengenai pendidikan di Indonesia saat ini">
-            </figure>
-        </div>
-        <div>
-            <h3>Penugasan 4 - Video</h3>
-            <figure>
-                <figcaption></figcaption>
-                <video src="" controls preload="none"></video>
-            </figure>
-        </div>
-    </section>
+            <div class="absolute bottom-[-20%] right-[-10%] w-[600px] h-[600px] bg-brand-accent/10 rounded-full blur-[130px] animate-mesh pointer-events-none"
+                style="animation-delay: -5s;"></div>
 
-    <!--Section Portofolio (Unfinished)-->
-    <section id="portfolio" class="project">
-        <h2>Portofolio & Proyek</h2>
-        <div id="proyek-1" class="proyek">
+            <div
+                class="absolute inset-0 bg-gradient-to-b from-transparent via-brand-bg/50 to-brand-bg pointer-events-none">
+            </div>
 
-        </div>
-    </section>
+            <div class="container mx-auto flex flex-col md:flex-row items-center justify-between gap-12 relative z-10">
 
-    <!--Section Kontak (Unfinished)-->
-    <section id="kontak">
-        <h2>Kontak</h2>
-    </section>
+                <div class="flex-1 text-left z-10 reveal">
+                    <p class="font-mono text-brand-accent text-sm mb-4 tracking-tighter">/* Undergraduate Informatics
+                        Engineering */</p>
+
+                    <h1 class="font-display text-5xl md:text-7xl font-bold text-brand-text leading-tight mb-6">
+                        Selamat <span class="text-brand-primary italic">Datang</span> Di Portofolio saya!
+                    </h1>
+
+                    <p class="text-brand-text/60 max-w-lg mb-8 text-lg font-light leading-relaxed">
+                        Halo, saya <span class="text-brand-text font-semibold">Habib Burrohman</span>. Mahasiswa Teknik
+                        Informatika Politeknik Negeri Bandung yang tertarik untuk mendalami perkembangan teknologi dan
+                        pengalaman berorganisasi.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#profil"
+                            class="px-6 py-3 bg-brand-primary text-white font-semibold rounded-lg hover:shadow-[0_10px_20px_-10px_rgba(59,130,246,0.5)] transition-all">Kenali
+                            Saya</a>
+                        <a href="#portofolio"
+                            class="px-6 py-3 border border-brand-text/10 text-brand-text font-semibold rounded-lg hover:bg-brand-text/5 transition-all">Project
+                            Saya</a>
+                    </div>
+                </div>
+
+                <div class="flex-1 flex justify-center items-center relative z-10 reveal">
+                    <div class="relative group">
+                        <div
+                            class="absolute -inset-1 bg-gradient-to-r from-brand-primary to-brand-accent rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000">
+                        </div>
+
+                        <div
+                            class="relative w-64 h-80 md:w-80 md:h-[450px] bg-slate-800 rounded-2xl overflow-hidden border border-brand-text/10 shadow-2xl transform rotate-2 group-hover:rotate-0 transition-transform duration-500">
+                            <img src="foto-habib.jpg" alt="Habib Burrohman"
+                                class="w-full h-full object-cover hover:grayscale-0 transition-all duration-700">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-brand-bg/80 via-transparent to-transparent">
+                            </div>
+                        </div>
+
+                        <div
+                            class="absolute -bottom-4 -left-4 p-4 bg-brand-bg border border-brand-text/10 rounded-lg shadow-xl font-mono text-xs text-brand-accent">
+                            STATUS: ACTIVE_DEV
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section profil -->
+        <section id="profil" class="py-24 bg-brand-bg relative">
+            <div class="container mx-auto px-8 relative z-10 reveal">
+
+                <div class="mb-12 md:mb-16">
+                    <p class="font-mono text-brand-accent text-sm mb-2 tracking-widest uppercase">/* Profil Saya */</p>
+                    <h2 class="font-display text-4xl md:text-5xl font-bold text-brand-text mb-4">
+                        Profil <span class="text-brand-primary italic">Pribadi</span>
+                    </h2>
+                    <p class="text-brand-text/60 text-lg">
+                        Untuk info selebihnya bisa kalian scroll kebawah atau cek melalui navigasi bar ya guys!
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                    <div
+                        class="md:col-span-2 bg-white/5 border border-white/10 p-8 rounded-3xl hover:bg-white/10 transition-colors duration-300 backdrop-blur-sm flex flex-col justify-center">
+                        <h3 class="text-2xl font-bold text-brand-text mb-4">Salam Kenal!</h3>
+                        <p class="text-brand-text/70 leading-relaxed text-lg mb-4">
+                            Nama saya <strong class="text-brand-text">Habib Burrohman</strong>. Mahasiswa program studi
+                            D3-Teknik Informatika, Politeknik Negeri Bandung.
+                        </p>
+                        <p class="text-brand-text/70 leading-relaxed text-lg">
+                            Saya pribadi adalah seorang yang memiliki minat dalam bidang teknologi terutama Software,
+                            meskipun saya baru mendalami bidang ini, saya yakin dengan kemampuan saya untuk bisa
+                            bersaing dengan perkembangan teknologi.
+                        </p>
+                    </div>
+
+                    <div
+                        class="bg-gradient-to-br from-brand-primary/20 to-brand-accent/20 border border-brand-primary/30 p-8 rounded-3xl flex flex-col justify-center items-start shadow-[0_0_30px_rgba(59,130,246,0.1)]">
+                        <div class="mb-6">
+                            <p class="text-brand-text/60 text-sm font-mono mb-1">Status</p>
+                            <p class="text-xl font-bold text-brand-text flex items-center gap-2">
+                                <span class="w-3 h-3 rounded-full bg-brand-accent animate-pulse"></span> Mahasiswa
+                            </p>
+                        </div>
+                        <div>
+                            <p class="text-brand-text/60 text-sm font-mono mb-1">NIM</p>
+                            <p class="text-2xl font-bold text-brand-accent font-mono tracking-wider">251511039</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="md:col-span-3 bg-white/5 border border-white/10 p-6 rounded-3xl hover:bg-white/10 transition-colors duration-300 text-center">
+                        <p class="text-brand-text/80 text-lg">
+                            Saya juga memiliki beberapa keterampilan yang bisa kalian cek dibawah ini ya!
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section keterampilan -->
+        <section id="skill" class="py-24 bg-brand-bg relative">
+            <div class="container mx-auto px-8 relative z-10 reveal">
+
+                <div class="mb-12 md:mb-16 text-center reveal">
+                    <p class="font-mono text-brand-accent text-sm mb-2 tracking-widest uppercase">/* Kapabilitas */</p>
+                    <h2 class="font-display text-4xl md:text-5xl font-bold text-brand-text mb-4">
+                        Skill dan <span class="texts-brand-primary italic">Minat</span>
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
+
+                    <div
+                        class="bg-white/5 border border-white/10 p-8 rounded-3xl hover:bg-white/10 hover:-translate-y-1 transition-all duration-300 reveal">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-brand-primary/20 text-brand-primary flex items-center justify-center mb-6 border border-brand-primary/30 text-2xl reveal">
+                            🧩
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-text mb-3">Problem Solving</h3>
+                        <p class="text-brand-text/70 leading-relaxed">
+                            Disaat saya terlibat sebuah projek kelompok, saya bisa cukup diandalkan dalam menuntaskan
+                            permasalahan.
+                        </p>
+                    </div>
+
+                    <div
+                        class="bg-white/5 border border-white/10 p-8 rounded-3xl hover:bg-white/10 hover:-translate-y-1 transition-all duration-300 reveal">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-brand-accent/20 text-brand-accent flex items-center justify-center mb-6 border border-brand-accent/30 text-2xl reveal">
+                            🌊
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-text mb-3">Adaptibility</h3>
+                        <p class="text-brand-text/70 leading-relaxed">
+                            Saya bisa untuk beradptasi dengan lingkungan belajar yang kompetitif sehingga mampu
+                            meningkatkan kemampuan saya.
+                        </p>
+                    </div>
+
+                    <div
+                        class="bg-white/5 border border-white/10 p-8 rounded-3xl hover:bg-white/10 hover:-translate-y-1 transition-all duration-300 reveal">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-orange-500/20 text-orange-400 flex items-center justify-center mb-6 border border-orange-500/30 text-2xl reveal">
+                            🤝
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-text mb-3">Team Working</h3>
+                        <p class="text-brand-text/70 leading-relaxed">
+                            Seringkali terjadi misskomunikasi dalam sebuah kelompok, saya bisa membantu rekan kelompok
+                            saya untuk menjembatani hal tersebut.
+                        </p>
+                    </div>
+
+                    <div
+                        class="bg-white/5 border border-white/10 p-8 rounded-3xl hover:bg-white/10 hover:-translate-y-1 transition-all duration-300 reveal">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-yellow-500/20 text-yellow-400 flex items-center justify-center mb-6 border border-yellow-500/30 text-2xl reveal">
+                            📚
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-text mb-3">Interest In Learning</h3>
+                        <p class="text-brand-text/70 leading-relaxed">
+                            Pengalaman yang baru membuat saya antusias dengan bagaimana hal tersebut bisa terjadi.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Penugasan (Unfinished)-->
+        <section id="penugasan" class="py-24 bg-brand-bg relative overflow-hidden">
+
+            <div
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-primary/5 rounded-full blur-[150px] pointer-events-none">
+            </div>
+
+            <div class="container mx-auto px-8 relative z-10 reveal">
+
+                <div class="mb-12 md:mb-16 text-center reveal">
+                    <p class="font-mono text-brand-accent text-sm mb-2 tracking-widest uppercase">/* Hasil pengerjaan */
+                    </p>
+                    <h2 class="font-display text-4xl md:text-5xl font-bold text-brand-text mb-4">
+                        Daftar <span class="text-brand-primary italic">Penugasan</span>
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 reveal">
+
+                    <div
+                        class="bg-white/5 border border-white/10 p-8 rounded-3xl hover:bg-white/10 transition-all duration-300 flex flex-col reveal">
+                        <div
+                            class="w-14 h-14 rounded-2xl bg-blue-500/20 text-blue-400 flex items-center justify-center mb-6 border border-blue-500/30 text-3xl shadow-inner reveal">
+                            📄
+                        </div>
+                        <h3 class="text-2xl font-bold text-brand-text mb-3">Penugasan 2 - Dokumen</h3>
+                        <p class="text-brand-text/70 leading-relaxed mb-8 flex-1">
+                            Berikut adalah dokumen untuk penugasan ke-2 yaitu <em
+                                class="text-brand-accent not-italic font-semibold">Term of Reference</em>
+                        </p>
+
+                        <a href="docs/TOR-Habib.docx" download
+                            class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-brand-primary/20 text-brand-primary font-semibold rounded-xl border border-brand-primary/30 hover:bg-brand-primary hover:text-white transition-all w-full md:w-auto">
+                            Lihat Dokumen
+                        </a>
+                    </div>
+
+                    <div
+                        class="bg-white/5 border border-white/10 p-8 rounded-3xl hover:bg-white/10 transition-all duration-300 flex flex-col reveal">
+                        <div
+                            class="w-14 h-14 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center mb-6 border border-emerald-500/30 text-3xl shadow-inner reveal">
+                            📊
+                        </div>
+                        <h3 class="text-2xl font-bold text-brand-text mb-3">Penugasan 3 - Infografis</h3>
+                        <p class="text-brand-text/70 leading-relaxed mb-6">
+                            Pengelolaan SDM yang efektif bukan sekadar tugas administratif, melainkan investasi
+                            strategis.
+                            Tanpa guru yang berkualitas dan sejahtera, transformasi pendidikan nasional akan sulit
+                            tercapai.
+                            Kualitas bangsa dimulai dari kualitas orang-orang yang mendidiknya.
+                        </p>
+
+                        <div id="wadah-infografis"
+                            class="w-full bg-[#0f172a] rounded-xl overflow-hidden border border-white/5 relative group cursor-pointer reveal">
+                            <img id="gambar-infografis" src="Infografis-Habib.webp"
+                                alt="infografis mengenai pendidikan di Indonesia saat ini"
+                                class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700 opacity-80 group-hover:opacity-100 reveal">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-4 reveal">
+                                <span class="text-xs font-mono text-white/80">Klik untuk memperbesar</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="md:col-span-2 bg-white/5 border border-white/10 p-8 rounded-3xl hover:bg-white/10 transition-all duration-300">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div
+                                class="w-14 h-14 rounded-2xl bg-red-500/20 text-red-400 flex items-center justify-center border border-red-500/30 text-3xl shadow-inner">
+                                🎬
+                            </div>
+                            <h3 class="text-2xl font-bold text-brand-text">Penugasan 4 - Video</h3>
+                        </div>
+
+                        <div
+                            class="w-full aspect-video bg-black rounded-2xl overflow-hidden border border-white/10 shadow-[0_0_40px_rgba(0,0,0,0.5)]">
+                            <video controls class="w-full h-full object-cover">
+                                <source src="video.mp4" type="video/mp4">
+                                Browser Anda tidak mendukung pemutaran video ini.
+                            </video>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--Section Portofolio (Unfinished)-->
+        <section id="portofolio" class="py-24 bg-brand-bg relative">
+            <div class="container mx-auto px-8 relative z-10 reveal">
+
+                <div class="mb-12 md:mb-16 text-center reveal">
+                    <p class="font-mono text-brand-accent text-sm mb-2 tracking-widest uppercase">/* Showcase */</p>
+                    <h2 class="font-display text-4xl md:text-5xl font-bold text-brand-text mb-4">
+                        Portofolio & <span class="text-brand-primary italic">Proyek</span>
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
+
+                    <div
+                        class="bg-white/5 border border-white/10 rounded-3xl overflow-hidden hover:bg-white/10 hover:-translate-y-2 transition-all duration-300 group flex flex-col reveal">
+                        <div class="h-48 bg-slate-800 relative overflow-hidden reveal">
+                            <img src="sertif-habib.webp" alt="Sertifikat OSIS SMA"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80 group-hover:opacity-100">
+                        </div>
+                        <div class="p-6 flex-1 flex items-start reveal">
+                            <h3 class="text-xl font-bold text-brand-text">Sertifikat Organisasi OSIS SMA</h3>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white/5 border border-white/10 rounded-3xl overflow-hidden hover:bg-white/10 hover:-translate-y-2 transition-all duration-300 group flex flex-col reveal">
+                        <div class="h-48 bg-slate-800 relative overflow-hidden flex items-center justify-center reveal">
+                            <img src="todolist.png" alt="To-Do List App"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80 group-hover:opacity-100">
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between reveal">
+                            <h3 class="text-xl font-bold text-brand-text mb-4">To-Do List App</h3>
+
+                            <div class="flex flex-wrap gap-2 mt-auto reveal">
+                                <span
+                                    class="px-2 py-1 bg-orange-500/20 text-orange-400 text-xs rounded-md border border-orange-500/30">HTML</span>
+                                <span
+                                    class="px-2 py-1 bg-blue-500/20 text-blue-400 text-xs rounded-md border border-blue-500/30">CSS</span>
+                                <span
+                                    class="px-2 py-1 bg-yellow-500/20 text-yellow-400 text-xs rounded-md border border-yellow-500/30">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--Section Kontak (Unfinished)-->
+        <section id="kontak" class="py-24 bg-brand-bg relative overflow-hidden">
+
+            <div
+                class="absolute bottom-[-10%] left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-brand-primary/10 rounded-full blur-[150px] pointer-events-none">
+            </div>
+
+            <div class="container mx-auto px-8 relative z-10 max-w-4xl">
+
+                <div class="mb-12 text-center">
+                    <p class="font-mono text-brand-accent text-sm mb-2 tracking-widest uppercase">/* Get In Touch */</p>
+                    <h2 class="font-display text-4xl md:text-5xl font-bold text-brand-text mb-4">
+                        Mari <span class="text-brand-primary italic">Terhubung</span>
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+
+                    <a href="mailto:habib.burrohman.tif25@polban.ac.id"
+                        class="bg-white/5 border border-white/10 p-6 rounded-3xl hover:bg-white/10 hover:-translate-y-2 transition-all duration-300 text-center group backdrop-blur-sm">
+                        <div
+                            class="w-12 h-12 mx-auto rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center mb-4 border border-blue-500/30 text-2xl group-hover:scale-110 transition-transform duration-300">
+                            📧
+                        </div>
+                        <h3 class="text-lg font-bold text-brand-text mb-1">Email</h3>
+                        <p class="text-brand-text/60 text-sm">Hubungi via Email</p>
+                    </a>
+
+                    <a href="https://github.com/HabibJamesPatton" target="_blank"
+                        class="bg-white/5 border border-white/10 p-6 rounded-3xl hover:bg-white/10 hover:-translate-y-2 transition-all duration-300 text-center group backdrop-blur-sm">
+                        <div
+                            class="w-12 h-12 mx-auto rounded-xl bg-slate-500/20 text-slate-300 flex items-center justify-center mb-4 border border-slate-500/30 text-2xl group-hover:scale-110 transition-transform duration-300">
+                            💻
+                        </div>
+                        <h3 class="text-lg font-bold text-brand-text mb-1">GitHub</h3>
+                        <p class="text-brand-text/60 text-sm">Lihat Repository</p>
+                    </a>
+
+                    <a href="https://www.instagram.com/hbibbrhman/" target="_blank"
+                        class="bg-white/5 border border-white/10 p-6 rounded-3xl hover:bg-white/10 hover:-translate-y-2 transition-all duration-300 text-center group backdrop-blur-sm">
+                        <div
+                            class="w-12 h-12 mx-auto rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center mb-4 border border-emerald-500/30 text-2xl group-hover:scale-110 transition-transform duration-300">
+                            📱
+                        </div>
+                        <h3 class="text-lg font-bold text-brand-text mb-1">Sosial Media</h3>
+                        <p class="text-brand-text/60 text-sm">Check me on <em>Instagram</em></p>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!--Bagian Footer untuk Copyright-->
+        <footer class="border-t border-white/10 bg-brand-bg py-8 relative z-10">
+            <div class="container mx-auto px-8 text-center">
+                <p class="text-brand-text/50 text-sm font-mono tracking-wide">
+                    &copy; 2026 Habib Burrohman.<span class="text-brand-primary">All rights reserved.</span>.
+                </p>
+            </div>
+        </footer>
     </main>
-    
-    <!--Bagian Footer untuk Copyright-->
-    <footer>
-        <h5>&copy; 2026 Portfolio Habib Burrohman. All rights reserved.</h5>
-        <p>Terima kasih.</p>
-    </footer>
+    <div id="lightbox" style="z-index: 99999;"
+        class="fixed inset-0 z-[9999] bg-black/90 hidden items-center justify-center p-4 backdrop-blur-sm opacity-0 transition-opacity duration-300">
 
+        <button id="close-lightbox"
+            class="absolute top-6 right-6 md:top-10 md:right-10 text-white/50 hover:text-white text-5xl transition-colors cursor-pointer">&times;</button>
+
+        <img id="lightbox-img" src="" alt="Infografis Full"
+            class="max-w-full max-h-[90vh] rounded-xl shadow-2xl scale-95 transition-transform duration-300">
+
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
